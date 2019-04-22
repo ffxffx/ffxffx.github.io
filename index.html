@@ -172,8 +172,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##我的第一篇博客文章使用heox搭建个人博客<br>开始工作：<br>安装HEXO…后续补充</p>
-<h2 id><a href="#" class="headerlink" title></a><img src="http://pic1.nipic.com/2008-08-14/2008814183939909_2.jpg" alt="image"></h2><p>参考资料</p>
+        <p>##我的第一篇博客文章使用heox搭建个人博客</p>
+<font size="7" face="黑体">1.准备工作:搭建Node.js环境</font>
+
+<h2 id="测试安装：命令行使用node-v-、mpm-v，查看显示版本号即成功"><a href="#测试安装：命令行使用node-v-、mpm-v，查看显示版本号即成功" class="headerlink" title="测试安装：命令行使用node -v 、mpm -v，查看显示版本号即成功"></a>测试安装：命令行使用node -v 、mpm -v，查看显示版本号即成功</h2><font size="7" face="黑体">2.安装Git工具并注册Gitthub账号</font>
+
+<h2 id="测试安装：git-version，查看显示版本号即成功。"><a href="#测试安装：git-version，查看显示版本号即成功。" class="headerlink" title="测试安装：git - -version，查看显示版本号即成功。"></a>测试安装：git - -version，查看显示版本号即成功。</h2><font size="7" face="黑体">3.开始工作</font>
+
+<p>（1）npm太慢，使用淘宝npm镜像：<br>     输入命令行：npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>     验证安装成功：npm config get registry<br>（2）安装hexo：<br>     输入命令行：cnpm install -g hexo-cli<br>     验证安装成功：hexo -v<br>（3）新建一个文件夹：<br>     输入命令行：mkdir blog<br>     新建完之后进入blog，cd blog<br>（4）生成博客：<br>     输入命令行：hexo init（生成需要点时间）<br>（5）启动博客<br>     输入命令行：hexo s<br>     打开网址：localhost:4000（已经有效果）<br>（6）新建一个博客：<br>     输入命令行：hexo n “我的第一个博客文章”<br>     打开blog/source/_posts文件夹里面的 “我的第一个博客文章”.md文件(自己添加博客内容)<br>     在blog文件夹里输入命令行: hexo clean<br>     再输入命令行: hexo g<br>     再输入命令行：hexo s，打开网址: localhost:4000<br>（7）将自己的博客部署到github上公开使用（先断开上面操作：Ctrl+c）<br>     新建仓库：</p>
+<pre><code>![image](http://m.qpic.cn/psb?/V10yv6IU4Yqekd/up.Fy4UQPY.xEQ2o*eLL00ZDpDIENLnq7vCoOgkfdPM!/b/dEkBAAAAAAAA&amp;bo=LgaBAgAAAAARB5s!&amp;rf=viewer_4)
+------
+名字格式最好是：xxxx.github.io（如：ffxffx.github.io）
+![image](http://m.qpic.cn/psb?/V10yv6IU4Yqekd/0lO25L2dN4WMC4Jh7s5OLz1bBbh*MZcZIGP3c.Btw3w!/b/dL4AAAAAAAAA&amp;bo=LQZuAgAAAAARF2c!&amp;rf=viewer_4)
+</code></pre><p>（8）安装git部署插件:<br>     在blog文件夹里输入命令行: cnpm install –save hexo-deployer-git<br>     在blog文件中有个config.yml文件,打开编辑<br>     <img src="http://m.qpic.cn/psb?/V10yv6IU4Yqekd/CqNeAhaahyIcE4.xQYSSjgo6NgUbzk60vyrJoMPhQfc!/b/dDQBAAAAAAAA&amp;bo=JQSIAgAAAAARB5s!&amp;rf=viewer_4" alt="image"><br>     改完之后，部署到远端，在blog文件夹里输入命令行: hexo d（自动部署，部署中时，会要求你输入github的用户和密码，之后再打开自己刚刚新建的仓库名，里面已经有文件了）<br>     最后打开新网址：<a href="https://xxxx.github.io/（如：https://ffxffx.github.io/）" target="_blank" rel="noopener">https://xxxx.github.io/（如：https://ffxffx.github.io/）</a><br>安装HEXO…后续补充</p>
+<hr>
+<p>参考资料</p>
 <p><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186</a></p>
 
       
